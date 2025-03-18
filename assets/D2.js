@@ -36,7 +36,11 @@ if (d % 5 === 0) {
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
-
+let e = 12;
+let f = 4;
+if (e === 8 || f === 8 || e + f === 8 || e - f === 8) {
+  console.log(`verificato`);
+}
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 5
@@ -106,8 +110,9 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
