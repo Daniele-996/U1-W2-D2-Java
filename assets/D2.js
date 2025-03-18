@@ -4,9 +4,11 @@
 let a = 5;
 let b = 10;
 if (a > b) {
-  console.log("a è maggiore di b ");
+  console.log("il numero più grande è", a);
 } else if (a < b) {
-  console.log("a è minore di b");
+  console.log("il numero più grande è", b);
+} else {
+  console.log("i numeri sono uguali");
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -16,12 +18,20 @@ if (a > b) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let c = 1;
+if (c !== 5) {
+  console.log("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let d = 10;
+if (d % 5 === 0) {
+  console.log(`divisibile per 5`);
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -64,20 +74,29 @@ if (a > b) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("il 10 è pari", 10 % 2 === 0);
+
 /* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+let val = 7
+if (val < 10) {
+    console.log("Meno di 10");
+  } else if (val < 5) {
+    console.log("Meno di 5");
+  } else {
+    console.log("Uguale a 10 o maggiore");
+  }
+  */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7;
 
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
