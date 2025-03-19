@@ -3,13 +3,6 @@
 */
 let a = 5;
 let b = 10;
-if (a > b) {
-  console.log("il numero più grande è", a);
-} else if (a < b) {
-  console.log("il numero più grande è", b);
-} else {
-  console.log("i numeri sono uguali");
-}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -115,18 +108,18 @@ me.city = "Toronto";
 console.log(me);
 
 /* ESERCIZIO 12
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
+Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-delete me.lastName;
 
+delete me.lastName;
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-me.skills.pop();
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop();
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
