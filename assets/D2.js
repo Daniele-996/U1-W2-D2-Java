@@ -1,11 +1,16 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
-*/
+ */
+/* SCRIVI QUI LA TUA RISPOSTA */
 let a = 5;
 let b = 10;
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+if (a < b) {
+  console.log("a è minore di b");
+} else if (a > b) {
+  console.log("a è maggiore di b");
+} else {
+  console.log("i numeri sono uguali");
+}
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
