@@ -48,6 +48,13 @@ if (e === 8 || f === 8 || e + f === 8 || e - f === 8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 51;
+let spedizione = 10;
+let totToPay = totalShoppingCart;
+if (totalShoppingCart < 50) {
+  totToPay += spedizione;
+}
+console.log("totale da pagare:" + totToPay);
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
