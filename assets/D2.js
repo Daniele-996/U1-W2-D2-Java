@@ -57,11 +57,19 @@ if (totalShoppingCart < 50) {
 console.log("totale da pagare:" + totToPay);
 
 /* ESERCIZIO 6
-  Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
-  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
+Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
+Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart2 = 100;
+totalShoppingCart2 = totalShoppingCart2 * 0.8;
+let spedizione2 = 10;
+let totToPay2 = totalShoppingCart2;
+if (totalShoppingCart2 < 50) {
+  totToPay2 += spedizione2;
+}
+console.log("totale da pagare:" + totToPay2);
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -70,19 +78,52 @@ console.log("totale da pagare:" + totToPay);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let aa = 40;
+let bb = 50;
+let cc = 60;
+if (aa >= bb) {
+  if (cc >= aa) {
+    console.log(cc, aa, bb);
+  } else {
+    if (cc >= bb) {
+      console.log(aa, cc, bb);
+    } else {
+      console.log(aa, bb, cc);
+    }
+  }
+} else {
+  if (aa >= cc) {
+    console.log(bb, aa, cc);
+  } else {
+    if (cc >= bb) {
+      console.log(cc, bb, aa);
+    } else {
+      console.log(aa, cc, bb);
+    }
+  }
+}
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let verifica = "ciao";
+
+if (typeof verifica === "number") {
+  console.log("E' un numero");
+} else {
+  console.log("Non è un numero!");
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log("il 10 è pari", 10 % 2 === 0);
+let numbEven = 12;
+if (numbEven % 2 === 0) {
+  console.log("è pari");
+} else console.log("è dispari");
 
 /* ESERCIZIO 10
 Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -126,12 +167,14 @@ Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rim
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 delete me.lastName;
+console.log(me);
 /* ESERCIZIO 13
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
+Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 me.skills.pop();
+console.log(me.skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
@@ -153,6 +196,8 @@ console.log(unArray);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-const lastIndex = unArray.length - 1;
-unArray.splice(lastIndex, 1, 100);
+// const lastIndex = unArray.length - 1;
+// unArray.splice(lastIndex, 1, 100);
 /* SCRIVI QUI LA TUA RISPOSTA */
+unArray[9] = 50;
+console.log(unArray);
